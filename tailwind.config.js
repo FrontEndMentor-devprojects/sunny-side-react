@@ -9,11 +9,18 @@ module.exports = {
         "main-yellow": "hsl(51, 100%, 49%)",
         "main-red": "hsl(7, 99%, 70%)",
         "dark-sat-cyan": "hsl(167, 40%, 24%)",
+        "dark-blue": "hsl(198, 62%, 26%)",
+        "grayish-blue": "hsl(210, 4%, 67%)",
+        "dark-grayish-blue": "hsl(232, 10%, 55%)"
       },
       backgroundImage: (theme) => ({
         "orange-header-sm": "url('./images/mobile/image-header.jpg')",
         "orange-header-md": "url('./images/desktop/image-header.jpg')",
       }),
+      height:{
+        "90vh":"90vh",
+        "50vw":"50vw"
+      }
     },
     fontFamily: {
       barlow: ['"Barlow"', "sans-serif"],
