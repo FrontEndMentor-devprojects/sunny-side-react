@@ -1,5 +1,4 @@
 import React from 'react'
-import emily from '../images/image-emily.jpg'
 
 
 export default function Testimonial({avatar, text, name, job}) {

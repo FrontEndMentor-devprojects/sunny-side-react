@@ -2,7 +2,9 @@ import "./App.css";
 import Header from "./Components/Header";
 import Hero1 from "./Components/Hero1";
 import Hero2 from "./Components/Hero2";
-import Testimonial from './Components/Testimonial'
+import Testimonial from './Components/Testimonial';
+import Gallery from './Components/Gallery';
+import Footer from './Components/Footer';
 import yellowEggSm from "./images/mobile/image-transform.jpg";
 import yellowEggMd from "./images/desktop/image-transform.jpg";
 import pinkGlassSm from "./images/mobile/image-stand-out.jpg";
@@ -11,9 +13,9 @@ import cherrySm from "./images/mobile/image-graphic-design.jpg";
 import cherryMd from "./images/desktop/image-graphic-design.jpg";
 import clementineSm from "./images/mobile/image-photography.jpg";
 import clementineMd from "./images/desktop/image-photography.jpg";
-import emily from './images/image-emily.jpg'
-import jennie from './images/image-jennie.jpg'
-import thomas from './images/image-thomas.jpg'
+import emily from './images/image-emily.jpg';
+import jennie from './images/image-jennie.jpg';
+import thomas from './images/image-thomas.jpg';
 
 
 
@@ -109,7 +111,7 @@ function App() {
           /> 
         })}
         </section>
-        <section className="md:p-10">
+        <section className="md:p-12">
           <h2 className="font-fraunces pt-14 pb-10 text-grayish-blue tracking-widest text-lg uppercase">Client testimonials</h2>
           <div className="md:flex">
             {testimonials.map((test,i)=>{
@@ -125,7 +127,8 @@ function App() {
         
           </div>
         </section>
-        
+        <Gallery />
+        <Footer/>
     </div>
   );
 }

@@ -11,7 +11,8 @@ module.exports = {
         "dark-sat-cyan": "hsl(167, 40%, 24%)",
         "dark-blue": "hsl(198, 62%, 26%)",
         "grayish-blue": "hsl(210, 4%, 67%)",
-        "dark-grayish-blue": "hsl(232, 10%, 55%)"
+        "dark-grayish-blue": "hsl(232, 10%, 55%)",
+        "footer-cyan":"hsl(168,42%,69%)"
       },
       backgroundImage: (theme) => ({
         "orange-header-sm": "url('./images/mobile/image-header.jpg')",
