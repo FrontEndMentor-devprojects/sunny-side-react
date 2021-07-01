@@ -5,6 +5,7 @@ import Hero2 from "./Components/Hero2";
 import Testimonial from './Components/Testimonial';
 import Gallery from './Components/Gallery';
 import Footer from './Components/Footer';
+
 import yellowEggSm from "./images/mobile/image-transform.jpg";
 import yellowEggMd from "./images/desktop/image-transform.jpg";
 import pinkGlassSm from "./images/mobile/image-stand-out.jpg";
@@ -24,7 +25,7 @@ const hero1Info = [
     imageSm: yellowEggSm,
     imageMd: yellowEggMd,
     header: "Transform your brand",
-    text: "We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.",
+    text: "We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.",
     moreRef: "/more",
     color: "main-yellow",
   },
