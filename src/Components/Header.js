@@ -7,7 +7,7 @@ export default function Header() {
   const [isBurgerOpen, setIsBurgerOpen] = React.useState(false);
 
   return (
-    <header className="bg-main-blue h-screen">
+    <header className="bg-orange-header-sm bg-cover md:bg-orange-header-md h-screen">
       <section
         className="relative text-lg md:static flex justify-between pt-10 md:pb-10 px-4"
         id="top-header"
@@ -24,11 +24,23 @@ export default function Header() {
           >
             <img src={burger} alt="" />
           </button>
+          
           <nav
             className={` ${
               isBurgerOpen ? "" : "hidden"
-            } p-5 absolute top-24 right-5 text-main-gray bg-white w-11/12 flex flex-col md:p-0 md:static md:max-content md:bg-main-blue md:block md:flex-row md:text-white`}
+            } p-7 absolute top-24 right-5 text-main-gray bg-white w-11/12 flex flex-col md:p-0 md:static md:max-content md:bg-transparent md:block md:flex-row md:text-white`}
           >
+            <svg className={`${isBurgerOpen ? "" : "hidden"}
+            text-white
+              fill-current
+              absolute
+              h-6
+              -top-6
+              right-0
+              `} 
+            viewBox="0 0 100 100" preserveAspectRatio="none">  
+            <polygon points="100,100 100,0 0,100" />
+          </svg>
             <a className="my-4 md:mx-4 md:my0" href="/about">
               About
             </a>
@@ -49,12 +61,12 @@ export default function Header() {
       </section>
       <section
         id="bottom-header"
-        className="bg-orange-header-sm bg-cover bg-no-repeat bg-bottom h-full md:bg-orange-header-md flex flex-col items-center"
+        className="flex flex-col items-center"
       >
         <h1 className=" mt-24 text-4xl tracking-widest md:text-6xl text-white font-fraunces uppercase">
           We are creatives
         </h1>
-        <img className="my-20 md:my-32" src={arrowDown} alt="" />
+        <img className="mt-14 md:mt-20" src={arrowDown} alt="" />
       </section>
     </header>
   );
