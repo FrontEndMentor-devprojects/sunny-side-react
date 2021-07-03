@@ -11,7 +11,7 @@ export default function Hero1({
 }) {
   return (
     <div className="md:flex">
-      <section className={`md:w-1/2 md:order-${order % 2 ? "1" : "2"}`}>
+      <section className={`md:w-1/2 ${order % 2 ? "md:order-1" : "md:order-2"}`}>
         <picture className="w-screen">
           <source media="(min-width:465px)" srcSet={imageMd} />
           <img src={imageSm} alt="" />
