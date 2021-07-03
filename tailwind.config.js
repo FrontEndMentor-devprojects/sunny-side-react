@@ -21,6 +21,9 @@ module.exports = {
       height:{
         "90vh":"90vh",
         "50vw":"50vw"
+      },
+      lineHeight:{
+        "2":"0.5rem"
       }
     },
     fontFamily: {

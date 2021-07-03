@@ -23,7 +23,7 @@ export default function Hero1({
         </h2>
         <p className="font-barlow text-main-gray md:text-left md:leading-loose">{text}</p>
         <a
-          className={`px-2 font-fraunces uppercase border-b-8 border-${color} border-opacity-30	`}
+          className={`px-2 leading-2 rounded-md	 font-fraunces uppercase border-b-8 border-${color} border-opacity-30	`}
           href={moreRef}
         >
           Learn more
